@@ -1,0 +1,15 @@
+-- Create Employee Management System Database
+CREATE DATABASE IF NOT EXISTS EmployeeManagementSystem;
+USE EmployeeManagementSystem;
+
+-- Create Employee Table
+CREATE TABLE IF NOT EXISTS Employees (
+    EmployeeID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50),
+    Salary DECIMAL(10, 2)
+);
+
+-- Example of an INSERT query to add an employee record
+-- INSERT INTO Employees (FirstName, LastName, Department, Salary) VALUES ('John', 'Doe', 'IT', 50000.00);
